@@ -6,8 +6,9 @@
 [x] set up html layout
 [x] create controller(s)
 ~~[] create server routes???~~
-[] set up click and http
-[] display response from giphy
+[x] set up click and http
+[x] display response from giphy
+[] input field to add tags to random
 
 
 

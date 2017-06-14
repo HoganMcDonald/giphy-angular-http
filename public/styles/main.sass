@@ -1,3 +1,6 @@
+//mixins
+
+//colors
 $background: rgb(201, 180, 213)
 $buttons: rgb(77, 135, 212)
 
@@ -15,6 +18,9 @@ h1
     weight: 600
   color: rgb(77, 77, 77)
 
+#searchDiv
+  text-align: center
+
 button
   background-color: $buttons
   display: block
@@ -25,6 +31,11 @@ button
     style: solid
     color: rgb(75, 75, 75)
 
+input
+  margin: auto
+  &:focus
+    outline: none
+
 #randomGif
   font:
     family: 'open sans'
@@ -34,4 +45,5 @@ button
   display: block
 
 img
-  height: 40%
+  max-height: 200px
+  max-width: 200px
