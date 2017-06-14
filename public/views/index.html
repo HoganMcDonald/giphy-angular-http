@@ -9,8 +9,21 @@
   <link rel="stylesheet" href="/styles/main.min.css">
 </head>
 
-<body>
-  error
+<body ng-app="myApp">
+  <div ng-controller="GiphyController as gc">
+
+    <!-- search button -->
+    <div id="searchDiv" ng-if="gc.showResponse">
+      <button type="button" id="randomGif" ng-click="gc.randomGif()">Get a Gif</button>
+    </div>
+
+    <!-- output -->
+    <div id="output" ng-if="!gc.showResponse">
+      <img ng-src="{{gc.gifUrl}}" alt="Nothing yet">
+      <button type="button" id="reset" ng-click="gc.reset()">Start Over</button>
+    </div>
+
+  </div>
 </body>
 
 </html>
