@@ -6,11 +6,12 @@
   <title>Angular Giphy Assignment</title>
   <script src="vendors/angular.min.js" charset="utf-8"></script>
   <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/service.js" charset="utf-8"></script>
   <link rel="stylesheet" href="/styles/main.min.css">
 </head>
 
 <body ng-app="myApp">
-  <div ng-controller="GiphyController as gc" ng-init="gc.loadRandom()">
+  <div ng-controller="GiphyController as gc">
 
     <!-- search button -->
     <div id="searchDiv" ng-if="gc.showResponse">
