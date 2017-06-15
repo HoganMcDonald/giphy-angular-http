@@ -14,9 +14,9 @@
   <h1>Giphy Peer Assignment</h1>
   <input type="text" ng-model="mc.searchField" placeholder="search for tags here">
   <button type="button" name="button" ng-click="mc.getRandom()">Random Gif Please!</button>
-  <button type="button" name="button">Search!</button>
-  <div id="display">
-    <img ng-src="{{mc.imageUrl}}">
+  <button type="button" name="button" ng-click="mc.searchGifs()">Search!</button>
+  <div id="display" ng-repeat="image in mc.imageArray">
+    <img ng-src="{{image}}">
   </div>
 </body>
 
